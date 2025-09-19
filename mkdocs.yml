@@ -1,0 +1,6 @@
+site_name: Recherches Embedding
+nav :
+  - Home: index.md
+  - Recherches: recherches.md
+theme :
+  name: readthedocs
