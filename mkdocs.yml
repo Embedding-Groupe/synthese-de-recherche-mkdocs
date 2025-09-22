@@ -1,4 +1,5 @@
 site_name: Recherches Embedding
+site_url: https://Embedding-Groupe.github.io/MKDocs/
 nav :
   - Home: index.md
   - Recherches: recherches.md
