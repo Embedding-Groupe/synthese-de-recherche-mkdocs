@@ -1,7 +1,21 @@
 site_name: Recherches Embedding
-site_url: https://Embedding-Groupe.github.io/MKDocs/
+site_url: https://embedding-groupe.github.io/MKDocs/
 nav :
-  - Home: index.md
+  - Accueil: index.md
   - Recherches: recherches.md
 theme :
-  name: readthedocs
+  name: material
+
+  palette:
+    - scheme: default
+      primary: purple
+      accent: amber
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Basculer en mode sombre
+    - scheme: slate
+      primary: purple
+      accent: amber
+      toggle:
+        icon: material/toggle-switch
+        name: Basculer en mode clair
