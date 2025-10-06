@@ -1,5 +1,5 @@
 site_name: Recherches Embedding
-site_url: https://embedding-groupe.github.io/MKDocs/
+site_url: https://embedding-groupe.github.io/synthese-de-recherche-mkdocs/
 nav :
   - Accueil: index.md
   - Recherches: recherches.md
