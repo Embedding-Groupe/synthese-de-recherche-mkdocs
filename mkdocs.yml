@@ -3,6 +3,7 @@ site_url: https://embedding-groupe.github.io/synthese-de-recherche-mkdocs/
 nav :
   - Accueil: index.md
   - Recherches: recherches.md
+  - Front-end : frend-end.md
 theme :
   name: material
 
