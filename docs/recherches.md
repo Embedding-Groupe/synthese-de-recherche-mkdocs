@@ -76,13 +76,13 @@ En mesurant la proximité sémantique entre les vecteurs, il devient possible de
 ### Expérimentations sur les relations entre mots
 
 Pour valider nos hypothèses, nous avons mené plusieurs tests pratiques.
-L’un d’eux consistait à prendre un mot de base, comme “X”, puis à modifier son vecteur en lui ajoutant le vecteur représentant une relation contraire (par exemple, un antonyme).
+L’un d’eux consistait à prendre un mot de base, comme “Moche”, puis à modifier son vecteur en lui ajoutant le vecteur représentant une relation contraire (par exemple, un antonyme).
 L’objectif était d’observer le résultat vectoriel obtenu et de vérifier si le modèle parvenait à proposer un mot opposé de manière cohérente.
 
 Ces expérimentations ont permis d’illustrer la capacité du modèle à manipuler les relations sémantiques, mais aussi ses limites lorsqu’il est appliqué à des contextes techniques ou spécialisés.
 
-*Figure 2 : Expérience de transformation vectorielle du mot “X” vers son contraire.*
-![Alt text](./img/recherche/resultat_antonyme.png)
+*Figure 2 : Expérience de transformation vectorielle du mot “Moche” vers son contraire.*
+![Alt text](./img/recherche/resultat_antonyme.png){style="display:block; margin:auto;"}
 
 Cette phase d’expérimentation nous a permis de comparer différents modèles linguistiques et d’évaluer leur capacité à comprendre le sens des mots dans un contexte précis.
 Nous avons retenu que l’utilisation d’embeddings préentraînés constitue une base solide pour développer une suggestion intelligente de mots, mais qu’une adaptation au domaine du code informatique reste nécessaire pour atteindre des résultats optimaux.
