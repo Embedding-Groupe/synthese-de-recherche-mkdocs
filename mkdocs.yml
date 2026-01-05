@@ -7,6 +7,7 @@ nav :
   - Technologie: technologie.md
   - Front-end : front-end.md
   - Parser: parser.md
+  - Conclusion: conclusion.md
 theme:
   name: material
 
