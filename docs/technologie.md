@@ -23,6 +23,10 @@ Après le choix d'opter pour une application de bureau nous avons réfléchis à
 
 C'est pourquoi nous avons comparé plusieurs solutions : Flet, Electron et Tauri. Premièrement, Flet est très récent et présente donc une documentation limitée, ce qui rend son utilisation risquée pour le projet. En effet, la première version de Flet considérée comme stable est sortie en 2025. Ensuite, Electron est très populaire car il est utilisé par des applications réputées comme Discord, ce qui témoigne de sa fiabilité. De plus, il est facile à prendre en main. Cependant, il consomme en moyenne 200 à 300 Mo de RAM au démarrage, contre seulement 30 à 50 Mo pour Tauri, ce qui peut impacter les performances. À l’inverse, Tauri combine légèreté, performance et documentation suffisamment complète, ce qui nous garantis une bonne expérience utilisateur. De plus, au lancement de l'application, Tauri s’est avéré 3 à 4 fois plus rapide au démarrage que Flet et Electron sur des machines standards. Tauri n’est pas encore aussi largement adopté que Electron mais il existe des applications connus qui ont été développées avec Tauri.Par exemple Zed, un éditeur de code, et Nota, une application de prise de notes basée sur Markdown.
 
+## Embarquement de l'intelligence artificielle locale
+
+Puisqu'on utilise une IA qui tourne en local pour l'application il faut embarquer l'IA dans celle-ci. On a vu deux options pour cela, soit embarquer directement le modèle via un fichier .gguf qui permet de contenir un modèle directement. Mais cette approche réduit largement les performances du modèle. Donc on est passé par une autre approche : Ollama, qui permet de télécharger un grand nombre de modèles et de les faire tourner en local très facilement. Le seul inconvénient est d'installer l'application Ollama, c'est pourquoi on détecte la présence d'Ollama et on propose de l'installer s'il n'est pas présent sur l'ordinateur. Cela présente également un autre avantage, on peut changer de modèle très facilement et proposer cette option à l'avenir pour permettre d'utiliser un plus gros modèle pour de meilleurs performance si l'utilisateur à un ordinateur plus puissant.
+
 
 ## Conclusion
 
