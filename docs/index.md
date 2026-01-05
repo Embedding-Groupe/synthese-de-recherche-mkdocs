@@ -1,12 +1,46 @@
-# Bienvenue sur notre site de recherches
+# Bienvenue sur la documentation du Smart Glossary Linter
 
-## Le projet :
-Nous travaillons sur un outil permettant de suggérer intelligement des termes métiers pour améliorer la qualité de nommage des variables. Pour le moment nous développons une application de glossaire métier, que nous voudrions enrichir avec des suggestions. Et par la suite le but serait d'ajouter la suggestion intelligente directement dans notre IDE.
+## Le projet
 
-Pour cela nous souhaitons utiliser les notions d'embedding et l'utilisation des vecteurs pour trouver des mots comme avec l'exemple `roi - homme + femme = reine`.
+Nous développons une application desktop de type **"Linter de Glossaire Intelligent"**.  
+Notre constat est simple : la qualité du code passe avant tout par la clarté des termes utilisés. Lorsqu'un développeur utilise un mot vague ou incorrect à la place d'un terme métier précis, la dette technique augmente.
 
-Ce site va donc nous permettre d'accueillir nos résultats de recherches qui ont pour but de trouver le meilleur outil et le plus adéquat pour trouver des suggestions de mots en fonction du contexte sémantique que l'on a.
+Notre outil vise à résoudre ce problème en offrant :
 
-## Les recherches :
+1.  Un **Gestionnaire de Glossaire** centralisé.
 
-Durant nos recherches, nous allons nous renseigner et tester différents modèles d'embedding, comme Word2Vec, BERT et tester des modèles IA qui utilise ces différents embedding. Nous comparerons les résultats des mots rendu, voir si on peut faire des "opérations entre les vecteurs" comme dans l'exemple `roi - homme + femme = reine`, si c'est possible par exemple d'ajouter le vecteur `synonyme` a un mot pour en trouver les différents synonyme (Ex : `beau + synonyme : magnifique`). Comparer les vitesse d'utilisation de ces différents modèles et faire des statistiques et comparatifs afin de déterminer le plus pertinent pour notre projet.
+2.  Une **Assistance IA** pour enrichir ce vocabulaire.
+
+3.  Un **Vérificateur de Code** (Linter) pour garantir le respect des termes définis.
+
+## Fonctionnalités Principales
+
+### Gestionnaire de Glossaire
+Une interface complète pour créer, modifier, importer et exporter vos dictionnaires de données. C'est la source de vérité de votre projet.
+
+### Intelligence Artificielle Locale (Privée)
+Nous avons intégré un moteur d'IA léger mais puissant, fonctionnant **entièrement hors-ligne** (pas de fuite de données).
+
+*   **Rôle :** Suggérer des synonymes, antonymes et contextes pour chaque mot ajouté.
+
+*   **Technologie :** Utilisation d'embeddings (vecteurs de mots) pour comprendre le sens et non juste l'orthographe (ex: comprendre que `Client` est proche de `Utilisateur`).
+
+### Analyseur de Code (Parser)
+Le cœur de la vérification.
+
+*   **Fonctionnement :** L'utilisateur importe ses fichiers sources.
+
+*   **Analyse :** Le système scanne le code (variables, fonctions, classes) et le compare au glossaire.
+
+*   **Rapport :** Il signale les termes inconnus ou propose des corrections basées sur le glossaire officiel.
+
+## Contenu de cette documentation
+
+Ce site a pour vocation de présenter notre **démarche de Recherche & Développement**. Vous y découvrirez :
+
+*   **Les Recherches IA :** Nos tests sur différents modèles (Word2Vec, BERT...), nos comparatifs de performance et la justification de nos choix finaux.
+*   **L'Architecture du Parser :** Comment nous transformons du code brut en données analysables (AST, Tokenization).
+*   **Les Choix Techniques :** Front-end, Back-end, et intégration des composants.
+
+---
+*Projet réalisé dans le cadre de la SAE - IUT.*
