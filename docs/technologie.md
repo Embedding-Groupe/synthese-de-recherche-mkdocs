@@ -2,10 +2,12 @@
 
 ## FastAPI
 
-FastAPI est un framework web moderne pour Python, conçu pour créer des API. Il est particulièrement apprécié pour sa rapidité d’exécution, proche de celle de Node.js ou Go, et sa facilité d’utilisation qui permet d’écrire du code clair. Grâce à la déclaration de types Python, FastAPI génère automatiquement une documentation interactive.
+FastAPI est un framework web moderne pour Python, conçu pour créer des API. Il est particulièrement utilisé pour sa rapidité d’exécution, proche de celle de Node.js ou Go, et sa facilité d’utilisation qui permet d’écrire du code clair. Grâce à la déclaration de types Python, FastAPI génère automatiquement une documentation interactive.
 
 
-Initialement, nous avions envisagé de développer notre application sous forme de site web. Cette approche semblait pratique pour un accès rapide depuis n’importe quel appareil. Cependant, après réflexion, elle présentait un inconvénient majeur : la souveraineté des données.
+## Le type d'application
+
+Initialement, nous avions envisagé de développer notre application sous forme de site web. Cette approche semblait idéale, car le client souhaitait une application accessible rapidement par tous, depuis n’importe quel appareil. Cependant, après réflexion, elle présentait un inconvénient majeur : la souveraineté des données.
 
 La souveraineté des données c'est le fait pouvoir garder le contrôle sur ses informations, savoir où elles sont stockées et qui peut y accéder, afin de protéger leur confidentialité et leur sécurité.
 
@@ -17,4 +19,13 @@ Ainsi, le choix de l’application de bureau répond à nos exigences en termes 
 
 ## Choix de la technologie pour l’application de bureau
 
-Pour développer notre application de bureau, nous avons comparé plusieurs solutions : Flet, Electron et Tauri. Premièrement, Flet est très récent et présente donc une documentation limitée, ce qui rend son utilisation risquée pour le projet. Ensuite, Electron, très populaire, est facile à utiliser mais consomme en moyenne 200 à 300 Mo de RAM au démarrage, contre seulement 30 à 50 Mo pour Tauri, ce qui impacte les performances. À l’inverse, Tauri combine légèreté, performance et documentation suffisamment complète, ce qui nous garantis une bonne expérience utilisateur. De plus, au lancement de l'application, Tauri s’est avéré 3 à 4 fois plus rapide au démarrage que Flet et Electron sur des machines standards. C’est donc ce choix que nous avons retenue pour notre projet.
+Après le choix d'opter pour une application de bureau nous avons réfléchis à quel technologie nous allons utilisé pour la développer.
+
+C'est pourquoi nous avons comparé plusieurs solutions : Flet, Electron et Tauri. Premièrement, Flet est très récent et présente donc une documentation limitée, ce qui rend son utilisation risquée pour le projet. En effet, la première version de Flet considérée comme stable est sortie en 2025. Ensuite, Electron est très populaire car il est utilisé par des applications réputées comme Discord, ce qui témoigne de sa fiabilité. De plus, il est facile à prendre en main. Cependant, il consomme en moyenne 200 à 300 Mo de RAM au démarrage, contre seulement 30 à 50 Mo pour Tauri, ce qui peut impacter les performances. À l’inverse, Tauri combine légèreté, performance et documentation suffisamment complète, ce qui nous garantis une bonne expérience utilisateur. De plus, au lancement de l'application, Tauri s’est avéré 3 à 4 fois plus rapide au démarrage que Flet et Electron sur des machines standards. Tauri n’est pas encore aussi largement adopté que Electron mais il existe des applications connus qui ont été développées avec Tauri.Par exemple Zed, un éditeur de code, et Nota, une application de prise de notes basée sur Markdown.
+
+
+## Conclusion
+
+Au terme de notre analyse, Tauri s’est imposé comme la solution la plus adaptée pour notre application de bureau. Son équilibre entre performance, légèreté et fiabilité en fait un choix pertinent pour offrir une expérience utilisateur optimale tout en garantissant la sécurité et la gestion des données.
+Parallèlement, FastAPI nous permet de gérer efficacement le back-end de l’application, grâce à sa rapidité, sa clarté et la génération automatique de documentation, assurant ainsi une communication fluide entre l’interface et les données.
+
