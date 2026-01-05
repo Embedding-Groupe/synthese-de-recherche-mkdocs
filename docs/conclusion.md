@@ -2,7 +2,9 @@
 
 ## Ruben
 
+Ce projet a été très enrichissant que ce soit sur le plan technique, ou sur la gestion de projet et la phase d'analyse du projet. En effet durant cette SAE, on a échangé à de nombreuses reprises avec notre cliente pour faire évoluer le projet dans le bon sens et correspondre un maximum à ses besoins que ce soit pour le visuel avec les maquettes, ou les différentes solutions de suggestions qui ont évoluées. Ces échanges ont même mené à un pivot du projet qui bien que déroutant en se disant qu'on perd tout ce qu'on a fait, est intéressant pour comprendre qu'on peut toujours changer tant que cela est pertinent et permet de mieux correspondre aux attentes et besoins du client.
 
+Du coté technique, j'ai travaillé majoritairement sur l'intégration des suggestions par ingelligence artificielle. Cela m'a permis d'apprendre énormément sur l'utilisation d'IA, les embeddings, ou encore l'optimisation des prompts. En plus de l'utilisation d'API et le liens entre un front et un back qui peut être complexe quand on rajoute une couche, comme ici avec Tauri.
 
 
 ## Nathan
@@ -16,3 +18,17 @@ Pour conclure, je dirai que ce projet a était et est toujours très interressan
 
 
 ## Alexis
+
+Ce projet m’a permis d’acquérir des connaissances et compétences en embedding, une notion de l’informatique de plus en plus présente aujourd’hui. Avant ce projet, je n’avais qu’une compréhension très générale de ce concept. Grâce aux différentes recherches et expérimentations que nous avons réalisées, j’ai pu comprendre comment les embeddings fonctionnent, comment ils sont utilisés pour représenter des données sous forme de vecteurs et comment ils peuvent améliorer des applications comme le traitement de texte ou la recherche intelligente.
+
+Personnellement, je me suis davantage concentré sur le front-end de l’application, car c’est l’une des parties du développement que je préfère. Au cours de cette phase du projet, j’ai acquis des compétences dans différents aspects :
+
+- Maquettage et design : j’ai utilisé Figma pour la première fois afin de créer des maquettes et prototyper l’interface. J’ai découvert que cet outil est très utile, mais également assez complexe à prendre en main selon moi.
+
+- Qualité de développement : j’ai découvert et appris à mettre en place des tests unitaires pour le front-end.
+
+- Gestion de projet : nous avons organisé des sessions de brainstorming et planifié nos tâches à l’aide d’outils comme Miro, ce qui m’a permis de me familiariser avec la coordination d’équipe et la planification agile.
+
+En ce qui concerne les difficultés rencontrées, je n’ai pas connu de point de blocage particulier. Cependant, une erreur que j’ai commise a été de ne pas avoir correctement organisé l’architecture du projet dès le départ. Cela nous a fait perdre du temps, car nous avons dû réorganiser l’ensemble des fichiers par la suite afin d’obtenir une structure plus propre et plus claire. C’est une erreur que je fais souvent et c’est un point sur lequel je dois m’améliorer.
+
+Enfin, pour conclure, ce projet m’a donné l’opportunité de travailler sur l’intégration d’outils modernes comme Tauri pour le front-end et FastAPI pour le back-end. Cela m’a permis de mieux comprendre l’architecture globale d’une application ainsi que la communication entre le front-end et le back-end. Ce projet a renforcé mes compétences techniques tout en me sensibilisant à l’importance de la collaboration et de l’organisation dans un projet de développement logiciel en équipe. Pour moi, il a été particulièrement agréable et gratifiant de voir notre projet évoluer au fil du temps, et je suis fier du travail que nous avons réalisé ensemble.
