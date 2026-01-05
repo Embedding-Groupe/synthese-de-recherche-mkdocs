@@ -4,8 +4,10 @@ nav :
   - Accueil: index.md
   - Contexte et besoins : contexte_besoin.md
   - Recherches génération glossaire: recherches.md
+  - Technologie: technologie.md
   - Front-end : front-end.md
   - Parser: parser.md
+  
 theme :
   name: material
 
