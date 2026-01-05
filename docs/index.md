@@ -1,4 +1,4 @@
-# Bienvenue sur la documentation du Smart Glossary Linter
+# Bienvenue sur la documentation de Glosaurus
 
 ## Le projet
 
