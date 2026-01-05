@@ -34,7 +34,7 @@ Le cœur de la vérification.
 
 Ce site a pour vocation de présenter notre **démarche de Recherche et Développement**. Vous y découvrirez :
 
-*   **Les Recherches IA :** Nos tests sur différents modèles (Word2Vec, BERT...), nos comparatifs de performance et la justification de nos choix finaux.
+*   **Les Recherches IA :** Nos tests sur différents modèles (Word2Vec, BERT...), nos comparatifs de performances et la justification de nos choix finaux.
 *   **L'Architecture du Parser :** Comment nous transformons du code brut en données analysables (AST, Tokenization).
 *   **Les Choix Techniques :** Front-end, Back-end, et intégration des composants.
 

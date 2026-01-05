@@ -62,6 +62,6 @@ Ce dernier script compile les résultats.
 ## Suite et Perspectives
 Actuellement, le système est fonctionnel mais présente certaines limitations qui vont devoir être corrigées et améliorées pour la suite du projet :
 
-*   **Support Multi-langages :** Pour l'instant, seul le langage **Python** est pris en charge (car nous utilisons le module `ast` spécifique à Python). Pour supporter **PHP, Java, C++, ou C#**, nous devrons implémenter des extracteurs spécifiques à chaque langage ou utiliser une librairie de parsing polyglotte (comme *Tree-sitter*).
+*   **Support multi-langages :** Pour l'instant, seul le langage **Python** est pris en charge (car nous utilisons le module `ast` spécifique à Python). Pour supporter **PHP, Java, C++, ou C#**, nous devrons implémenter des extracteurs spécifiques à chaque langage ou utiliser une librairie de parsing polyglotte (comme *Tree-sitter*).
 *   **Intégration Front-end :** Ces scripts fonctionnent actuellement en ligne de commande (CLI) ou via l'orchestrateur en backend. Ils ne sont pas encore connectés à l'interface utilisateur. Une API devra être créée pour permettre au front-end d'envoyer un fichier et de recevoir l'analyse JSON en retour.
 *   **Lecture d'un programme entier :** Actuellement, le programme n'analyse qu'un fichier donné à la fois ; l'objectif est qu'il puisse recevoir un chemin ou un dossier source et parcourir l'entièreté du dossier pour analyser tous les fichiers du langage concerné.

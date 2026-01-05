@@ -23,5 +23,5 @@ Pour accompagner FastAPI et répondre aux besoins du client, plusieurs framework
 
 Tous les frameworks front-end présentés utilisent le langage JavaScript. On peut donc en déduire que ce langage est adapté pour répondre aux besoins exprimés, notamment en matière d’interactivité, de dynamisme et d’intégration avec une API FastAPI.
 Parmi ces frameworks, Preact apparaît comme le meilleur choix pour un projet de petite envergure, grâce à sa légèreté, ses excellentes performances et sa compatibilité avec l’écosystème React. Il offre ainsi la possibilité de bénéficier des avantages de React en réduisant les temps de chargement.
-Son écosystème complet, sa facilité d’intégration et sa simplicité de mise en œuvre en font une solution particulièrement adaptée pour développer une interface moderne, fluide et performante en lien avec un backend FastAPI et qui répond parfaitement au besoin du client.
+Son écosystème complet, sa facilité d’intégration et sa simplicité de mise en œuvre en font une solution particulièrement adaptée pour développer une interface moderne, fluide et performante en lien avec un backend FastAPI et qui répond parfaitement aux besoins du client.
 

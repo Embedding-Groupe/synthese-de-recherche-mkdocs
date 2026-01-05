@@ -90,11 +90,11 @@ Nous avons retenu que l’utilisation d’embeddings préentraînés constitue u
 
 ## **Choix pour la suggestion, évolution et limites**
 
-### Première réflexion et système de suggestion ###
+### Première réflexion et système de suggestion
 
-Avec nos précédentes expérimentations, nous avons conclus que l'utilisation des embeddings pour analyser le contexte est bonne, mais moins précise pour suggérer directement des synonymes.
+Avec nos précédentes expérimentations, nous avons conclu que l'utilisation des embeddings pour analyser le contexte est pertinente, mais moins précise pour suggérer directement des synonymes.
 
-Nous avons donc choisi de conserver les embeddings pour se rapprocher un maximum du contexte, mais de récuperer une liste de synonymes depuis un service qui sera comparée au contexte ensuite.
+Nous avons donc choisi de conserver les embeddings pour se rapprocher au maximum du contexte, mais de récupérer une liste de synonymes depuis un service, qui sera ensuite comparée au contexte.
 
 À la base, comme nous avions la liberté du langage, nous nous sommes penchés sur le français. Le seul service permettant de récupérer une liste de synonymes français sans passer par une traduction (Reverso) est ReSyf, qui propose également un code contenant les données. C'est un service local, mais il possède une liste figée.
 
