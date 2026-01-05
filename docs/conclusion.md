@@ -2,7 +2,9 @@
 
 ## Ruben
 
+Ce projet a été très enrichissant que ce soit sur le plan technique, ou sur la gestion de projet et la phase d'analyse du projet. En effet durant cette SAE, on a échangé à de nombreuses reprises avec notre cliente pour faire évoluer le projet dans le bon sens et correspondre un maximum à ses besoins que ce soit pour le visuel avec les maquettes, ou les différentes solutions de suggestions qui ont évoluées. Ces échanges ont même mené à un pivot du projet qui bien que déroutant en se disant qu'on perd tout ce qu'on a fait, est intéressant pour comprendre qu'on peut toujours changer tant que cela est pertinent et permet de mieux correspondre aux attentes et besoins du client.
 
+Du coté technique, j'ai travaillé majoritairement sur l'intégration des suggestions par ingelligence artificielle. Cela m'a permis d'apprendre énormément sur l'utilisation d'IA, les embeddings, ou encore l'optimisation des prompts. En plus de l'utilisation d'API et le liens entre un front et un back qui peut être complexe quand on rajoute une couche, comme ici avec Tauri.
 
 
 ## Nathan
