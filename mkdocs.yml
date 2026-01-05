@@ -6,24 +6,15 @@ nav :
   - Recherches génération glossaire: recherches.md
   - Front-end : front-end.md
   - Parser: parser.md
-theme :
+theme:
   name: material
 
   palette:
-    - scheme: default
-      primary: purple
-      accent: amber
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Basculer en mode sombre
-    - scheme: slate
-      primary: purple
-      accent: amber
-      toggle:
-        icon: material/toggle-switch
-        name: Basculer en mode clair
+    primary : custom
+    accent : custom
 markdown_extensions:
   - attr_list
 
 extra_css:
   - style/classes.css
+  - style/extra.css
