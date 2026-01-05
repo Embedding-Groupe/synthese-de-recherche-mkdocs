@@ -3,7 +3,7 @@
 ## Le projet
 
 Nous développons une application desktop de type **"Linter de Glossaire Intelligent"**.  
-Notre constat est simple : la qualité du code passe avant tout par la clarté des termes utilisés. Lorsqu'un développeur utilise un mot vague ou incorrect à la place d'un terme métier précis, la dette technique augmente.
+L'objectif est de faciliter l'écriture des termes métier dans le code, pour qu'il corresponde mieux au contexte métier.
 
 Notre outil vise à résoudre ce problème en offrant :
 
@@ -16,14 +16,10 @@ Notre outil vise à résoudre ce problème en offrant :
 ## Fonctionnalités Principales
 
 ### Gestionnaire de Glossaire
-Une interface complète pour créer, modifier, importer et exporter vos dictionnaires de données. C'est la source de vérité de votre projet.
+Une interface complète pour créer, modifier, importer et exporter vos dictionnaires de données.
 
 ### Intelligence Artificielle Locale (Privée)
-Nous avons intégré un moteur d'IA léger mais puissant, fonctionnant **entièrement hors-ligne** (pas de fuite de données).
-
-*   **Rôle :** Suggérer des synonymes, antonymes et contextes pour chaque mot ajouté.
-
-*   **Technologie :** Utilisation d'embeddings (vecteurs de mots) pour comprendre le sens et non juste l'orthographe (ex: comprendre que `Client` est proche de `Utilisateur`).
+Nous avons intégré un moteur d'IA léger mais performant permettant le fonctionnement **entièrement hors-ligne** (pas de fuite de données). Son **rôle** est de suggérer des synonymes, antonymes et contextes pour chaque mot ajouté.
 
 ### Analyseur de Code (Parser)
 Le cœur de la vérification.
@@ -43,4 +39,4 @@ Ce site a pour vocation de présenter notre **démarche de Recherche & Développ
 *   **Les Choix Techniques :** Front-end, Back-end, et intégration des composants.
 
 ---
-*Projet réalisé dans le cadre de la SAE - IUT.*
+*Projet réalisé dans le cadre de la SAE de 3ème année de BUT Informatique - IUT du Limousin.*
