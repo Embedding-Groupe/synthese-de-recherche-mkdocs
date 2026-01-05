@@ -1,10 +1,8 @@
 # Choix des technologies pour l'application
 
-
 ## FastAPI
 
 FastAPI est un framework web moderne pour Python, conçu pour créer des API. Il est particulièrement apprécié pour sa rapidité d’exécution, proche de celle de Node.js ou Go, et sa facilité d’utilisation qui permet d’écrire du code clair. Grâce à la déclaration de types Python, FastAPI génère automatiquement une documentation interactive.
-
 
 
 Initialement, nous avions envisagé de développer notre application sous forme de site web. Cette approche semblait pratique pour un accès rapide depuis n’importe quel appareil. Cependant, après réflexion, elle présentait un inconvénient majeur : la souveraineté des données.
