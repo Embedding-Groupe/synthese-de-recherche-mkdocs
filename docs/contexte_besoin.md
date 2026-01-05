@@ -24,3 +24,12 @@ Dans un premier temps, il a donc été décidé de mieux comprendre la manipulat
 
 Le but du projet est de développer une **application de glossaire métier** qui permettra de saisir un mot et ses informations : définition, contexte, synonymes, antonymes, termes liés, etc.  
 À cette application, il faudra ajouter des **suggestions intelligentes**, en utilisant l’intelligence artificielle et les embeddings, afin de compléter les informations d’un mot de manière cohérente et pertinente.
+
+## Cibles et contraintes
+
+Cette application est déstinée à différents types d'utilisateurs qui apportent leur lot de contraintes chacuns :
+
+ - Les étudiants : Notre cliente étant enseignante à l'IUT, elle aimerait pouvoir utiliser l'application pour ces élèves. Pour les étudiants il y a deux cas : les ordinateurs de l'IUT ou le ordinateurs personnels. Pour les ordinateurs de l'IUT, l'application sera disponible depuis des machines virtuelles, il faut donc que l'application soit légère, et que le modèle d'IA soit suffisamment léger pour tourner en local sur ces petites machines virtuelles et ce sous Linux.
+ Pour les étudiants qui utilisent une machine personnelle, il faut donc répondre à la même contrainte de puissance puisque certains ont de vieilles machines peu performantes. De plus il faut pouvoir faire tourner l'application sur tous les systèmes d'exploitation (Linux, Windows, MacOS)
+ - Les entreprises : Notre cliente possède également un réseau avec des professionnels au sein d'entreprises qui sont intéressés par cette applications et qui aimeraient pouvoir l'utiliser pour leurs projets. Cela ne pose pas de contrainte de performance plus que cela, cependant les données qui sont insérées dans l'applications peuvent être sensibles (glossaire ou code), surtout puisqu'on utilise de l'IA. Cela impose de respecter la souveraineté des données et assurer qu'elles ne sont pas publiées partout dans des modèles d'IA ou autre.
+ - Open-source : l'application est également déstinée à être open-source, pour permettre une évolution et des suggestions par la communauté et pour qu'elle puis être reprise et réutilisée par la suite pour d'autres projets de SAE ou projets de recherche. Cela impose de vérifier que notre utilisation d'outils externe comme les modèle d'IA ne rentre pas en conflit avec les certificats et les conditions d'utilisation de l'outils par exemple.

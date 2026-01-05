@@ -4,26 +4,28 @@ nav :
   - Accueil: index.md
   - Contexte et besoins : contexte_besoin.md
   - Recherches génération glossaire: recherches.md
+  - Technologie: technologie.md
   - Front-end : front-end.md
   - Parser: parser.md
-theme :
+theme:
   name: material
 
   palette:
     - scheme: default
-      primary: purple
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/toggle-switch-off-outline
+        icon: material/weather-night
         name: Basculer en mode sombre
     - scheme: slate
-      primary: purple
-      accent: amber
+      primary: custom
+      accent: custom
       toggle:
-        icon: material/toggle-switch
+        icon: material/weather-sunny
         name: Basculer en mode clair
 markdown_extensions:
   - attr_list
 
 extra_css:
   - style/classes.css
+  - style/extra.css
