@@ -11,8 +11,18 @@ theme:
   name: material
 
   palette:
-    primary : custom
-    accent : custom
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Basculer en mode sombre
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Basculer en mode clair
 markdown_extensions:
   - attr_list
 
