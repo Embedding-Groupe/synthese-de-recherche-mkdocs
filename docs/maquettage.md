@@ -6,16 +6,8 @@ Au départ, nous avions quelques difficultés avec le design. C’est pourquoi n
 
 Une fois cette base obtenue, il nous a fallu créer un logo. Pour cela, nous avons également utilisé une IA générative, en nous basant sur le nom de l’application (Glosaurus) ainsi que sur son fonctionnement.
 
-
-
-
-
-
-
-
-
-
-
-
+[![Miniature](./img/maquettage/Maquette-verte-debut.png){ width="500" .center }](./img/maquettage/Maquette-verte-debut.png)
 
 Tout au long du processus de maquettage, nous avons reçu des retours réguliers du client. Ceux-ci nous ont permis d’affiner le design en fonction de ses remarques et des besoins exprimés, notamment en intégrant la charte graphique de l’Université de Limoges. Finalement, l’ensemble de ces échanges avec le client nous a conduit à un résultat final moderne et épuré, tout en respectant pleinement ses attentes et ses besoins.
+
+[![Miniature](./img/maquettage/Maquette-rouge-final.png){ width="500" .center }](./img/maquettage/Maquette-rouge-final.png)
