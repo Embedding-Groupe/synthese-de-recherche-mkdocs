@@ -27,6 +27,19 @@ C'est pourquoi nous avons comparé plusieurs solutions : Flet, Electron et Tauri
 
 Puisqu'on utilise une IA qui tourne en local pour l'application, il faut embarquer l'IA dans celle-ci. On a vu deux options pour cela : soit embarquer directement le modèle via un fichier .gguf qui contient le modèle, soit passer par un gestionnaire comme Ollama. L'approche .gguf peut cependant réduire les performances du modèle. Nous avons donc privilégié une autre approche : Ollama, qui permet de télécharger de nombreux modèles et de les faire tourner en local très facilement. Le seul inconvénient est d'installer l'application Ollama, c'est pourquoi on détecte sa présence et on propose de l'installer si elle n'est pas présente sur l'ordinateur. Cela présente également un autre avantage : on peut changer de modèle très facilement et proposer à l'avenir d'utiliser un modèle plus gros pour de meilleures performances si l'utilisateur a un ordinateur plus puissant.
 
+## Génération des builders
+
+Pour générer automatiquement les builders (installateurs et paquets) pour Linux, macOS et Windows, nous avons utilisé un workflow GitHub Actions. 
+
+Pour celui-ci nous avons utilisé un fichier YAML :
+
+* Créé et affiné avec l'aide d'un outil d'IA générative
+
+* Orchestrant la compilation et le packaging sur chaque plateforme.
+
+Le workflow se déclenche lors d'un push de version contenant le suffixe « -v », ce qui lance la création des builders et la publication des artefacts.
+
+
 
 ## Conclusion
 
