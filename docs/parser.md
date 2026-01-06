@@ -59,6 +59,14 @@ Ce dernier script compile les résultats.
 *   *Fonctionnement :* Il compte les occurrences de chaque mot normalisé.
 *   *Sortie :* Il génère un fichier JSON final (nommé d'après le fichier source) contenant les statistiques, par exemple : `{"user": 5, "controller": 2, "id": 8}`.
 
+## Résultat
+Afin de vérifier le bon comportement du parser, nous avons réalisé différent test sur les kathas Tennis créé par Emily Bache.
+
+*(https://github.com/emilybache/Tennis-Refactoring-Kata/tree/main/java/src/main/java)*
+
+Comme dit précédemment, le parser renvoie sous la forme d'un JSON le résultat, voici les résultats obtenue sur les kathas Tennis Game 1 à 7 (et l'interface).
+![alt text](./img/parser/resultat.png){ width="100" .center }
+
 ## Suite et Perspectives
 Actuellement, le système est fonctionnel mais présente certaines limitations qui vont devoir être corrigées et améliorées pour la suite du projet :
 
