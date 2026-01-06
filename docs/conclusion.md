@@ -14,7 +14,13 @@ Durant ce projet, j'ai principalement travaillé sur la partie back-end avec la 
 Pour ce qui est du parser, il n'y a pas eu de difficulté majeure : il a surtout fallu effectuer un important travail de recherche en amont du développement pour obtenir les résultats souhaités. La plus grosse partie du travail a été réalisée (recherche de mots non-clés dans un script). Il reste à ajouter le parcours de dossiers, le support de nouveaux langages et la liaison avec l'interface utilisateur. Nous pouvons également envisager l'ajout de tests unitaires pour garantir le bon fonctionnement de chaque composant.
 
 Pour conclure, je dirais que ce projet a été et reste très intéressant. Bien que l'objectif principal évoqué en début d'année ait évolué et que la partie IA soit moins importante que prévu, j'ai pu faire face à de nouveaux problèmes et découvrir ou redécouvrir des concepts tels que l'architecture d'une application, la mise en place d'un parser et la création d'un logiciel.
+
+
 ## Maxence
+
+Ce projet m’a particulièrement plu par son caractère évolutif : le pivot effectuer ainsi que les retours réguliers de la cliente m'ont appris à mieux recueillir et formaliser les besoins. Sur la partie développement, je me suis occupé du maquettage et du front‑end de l’application (prototypage sous Figma, intégration des maquettes), ce qui m’a permis d’améliorer mes compétences en design d’interface et en intégration. J’ai également découvert de nouvelles technologies comme Electron et des outils d’IA générative centralisée (Stitch), qui ont enrichi mon approche du prototypage.
+
+Sur le plan technique, j’ai découvert les bases des embeddings et du fonctionnement des modèles de langage. Je n’ai pas participé au développement back‑end, mais j’ai travaillé en collaboration avec ceux en charge de celui-ci et assisté aux choix architecturaux de l'application (souveraineté des données, etc).
 
 
 ## Alexis
