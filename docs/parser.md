@@ -1,8 +1,7 @@
-# **Récupération des mots clefs (Parser)**
+# **Récupération des mots‑clés (Parser)**
 
 ## Contexte d'utilisation
-Dans le cadre de notre application, nous souhaitons analyser des fichiers de code source afin d'en extraire les concepts clés. (les noms de variables, fonctions, classes, etc.) L'objectif est de transformer un code brut en une liste structurée de mots significatifs pondérés par leur fréquence. Ces données sont destinées à alimenter une intelligence artificielle ou un moteur de recherche interne, permettant de classifier ou de résumer le contenu technique d'un projet. De plus elle nous servirons plus tard
-pour pouvoir vérifier si tout les mots d'un glossaire sont présent dans le code à la manière d'un linter.
+Dans le cadre de notre application, nous souhaitons analyser des fichiers de code source afin d'en extraire les concepts clés (les noms de variables, fonctions, classes, etc.). L'objectif est de transformer un code brut en une liste structurée de mots significatifs pondérés par leur fréquence. Ces données sont destinées à alimenter une intelligence artificielle ou un moteur de recherche interne, permettant de classifier ou de résumer le contenu technique d'un projet. De plus, elles nous serviront plus tard pour pouvoir vérifier si tous les mots d'un glossaire sont présents dans le code, à la manière d'un linter.
 
 ## Solutions envisagées
 Pour parvenir à extraire ces informations, plusieurs approches ont été considérées :
@@ -11,7 +10,7 @@ Pour parvenir à extraire ces informations, plusieurs approches ont été consid
     *   *Principe :* Rechercher des motifs textuels correspondant à des variables ou des fonctions.
     *   *Problème :* Très complexe à maintenir, difficulté à distinguer le code des commentaires ou des chaînes de caractères, et manque de fiabilité sur des structures complexes.
 
-2.  **Traitement de chaînes simple (String Manipulation) :**
+2.  **Traitement de chaînes simples (String Manipulation) :**
     *   *Principe :* Découper le fichier par espaces ou retours à la ligne.
     *   *Problème :* Ne comprend pas la syntaxe du langage (mélange mots-clés du langage et noms de variables), très bruité.
 
@@ -24,7 +23,7 @@ Nous avons opté pour la **solution basée sur l'AST (Abstract Syntax Tree)**.
 
 *   **Fiabilité :** C'est la méthode la plus robuste car elle utilise le même mécanisme que l'interpréteur Python lui-même. Elle garantit que nous n'extrayons que des identifiants valides.
 *   **Exemples connus :** Cette technique est utilisée par la majorité des outils d'analyse statique de code comme *Pylint*, *Black* ou les IDE pour l'autocomplétion.
-*   **Bonus :** Cette techinque est compatible avec plusieurs langage, dont certain sont vérifié (C#, Go, Java, JavaScript, Python, etc. ) et d'autre sont maintenue par des utilisateurs (Delphi, Ruby, PHP, etc. ).
+*   **Bonus :** Cette technique est compatible avec plusieurs langages, dont certains sont vérifiés (C#, Go, Java, JavaScript, Python, etc.) et d'autres sont maintenus par des utilisateurs (Delphi, Ruby, PHP, etc.).
 
 ## Difficultés rencontrées
 La mise en œuvre a présenté quelques défis :
@@ -33,7 +32,7 @@ La mise en œuvre a présenté quelques défis :
 
 *   **Conventions de nommage hétérogènes :** Le code peut utiliser différentes conventions (snake_case, camelCase). Un identifiant comme `calcul_moyenne` doit être compris comme deux mots : "calcul" et "moyenne".
 
-*   **Chaine ou commentaire :** En effet les chaines de caractères et les commentaires sont des identifiants valides, mais nous ne voulons pas les récupérer, car ils sont souvent utilisés dans un contexte différent du code et pourrait devenir des faux positif. Si on souhaite les garder, on pourrait envisager d'appliqué en coefficiant de priorité en fonction de la source du mot (important si c'est une variable, faible si c'est un commentaire ou une chaine de caractères).
+*   **Chaînes ou commentaires :** En effet, les chaînes de caractères et les commentaires peuvent contenir des mots, mais nous ne souhaitons pas systématiquement les récupérer, car ils sont souvent utilisés dans un contexte différent du code et peuvent devenir des faux positifs. Si l'on souhaite les garder, on pourrait envisager d'appliquer un coefficient de priorité en fonction de la source du mot (important si c'est une variable, faible si c'est un commentaire ou une chaîne de caractères).
 
 *   **Gestion des fichiers :** Orchestrer la lecture du fichier source, le passage des données entre les différentes étapes, et l'écriture du résultat final.
 
@@ -71,6 +70,6 @@ Comme dit précédemment, le parser renvoie sous la forme d'un JSON le résultat
 ## Suite et Perspectives
 Actuellement, le système est fonctionnel mais présente certaines limitations qui vont devoir être corrigées et améliorées pour la suite du projet :
 
-*   **Support Multi-langages :** Pour l'instant, seul le langage **Python** est pris en charge (car nous utilisons le module `ast` spécifique à Python). Pour supporter **PHP, Java, C++, ou C#**, nous devrons implémenter des extracteurs spécifiques à chaque langage ou utiliser une librairie de parsing polyglotte (comme *Tree-sitter*).
+*   **Support multi-langages :** Pour l'instant, seul le langage **Python** est pris en charge (car nous utilisons le module `ast` spécifique à Python). Pour supporter **PHP, Java, C++, ou C#**, nous devrons implémenter des extracteurs spécifiques à chaque langage ou utiliser une librairie de parsing polyglotte (comme *Tree-sitter*).
 *   **Intégration Front-end :** Ces scripts fonctionnent actuellement en ligne de commande (CLI) ou via l'orchestrateur en backend. Ils ne sont pas encore connectés à l'interface utilisateur. Une API devra être créée pour permettre au front-end d'envoyer un fichier et de recevoir l'analyse JSON en retour.
-*   **Lecture d'un programme entier :** Actuellement, le programme n'analyse qu'un fichier donné à la fois, l'objectif c'est qu'il puisse recevoir un chemin ou un dossier source et parcours l'entièreté du dossier pour analyser tous les fichiers du langage concerné.
+*   **Lecture d'un programme entier :** Actuellement, le programme n'analyse qu'un fichier donné à la fois ; l'objectif est qu'il puisse recevoir un chemin ou un dossier source et parcourir l'entièreté du dossier pour analyser tous les fichiers du langage concerné.

@@ -4,10 +4,11 @@ nav :
   - Accueil: index.md
   - Contexte et besoins : contexte_besoin.md
   - Recherches génération glossaire: recherches.md
-  - Technologie: technologie.md
+  - Technologies utilisées : technologie.md
   - Front-end : front-end.md
+  - Maquettage: maquettage.md
   - Parser: parser.md
-  - Conclusion: conclusion.md
+  - Conclusion Personnelle: conclusion.md
 theme:
   name: material
 

@@ -1,8 +1,8 @@
-# **Recherche génération glossaire.** 
+# **Recherche : génération de glossaire**
 
-Comme expliqué dans l’index du Mkdoc, pour notre application, nous souhaitons utiliser une intelligence artificielle.
+Comme expliqué dans l’index du MkDocs, pour notre application, nous souhaitons utiliser une intelligence artificielle.
 N’ayant aucune idée de la manière de procéder, nous avons effectué de nombreuses recherches (modèles à utiliser, création d’un modèle, modèles déjà existants, appel à des API, phase d’entraînement, etc.).
-Tout l’article recense nos recherches ainsi que leur évolution, leur abandon ou la justification de ces dernières.
+Tout l’article recense nos recherches, leur évolution, leurs abandons éventuels ou la justification de ces dernières.
 
 
 ## **La création d'un modèle d'intelligence artificielle.**
@@ -88,26 +88,26 @@ Cette phase d’expérimentation nous a permis de comparer différents modèles 
 Nous avons retenu que l’utilisation d’embeddings préentraînés constitue une base solide pour développer une suggestion intelligente de mots, mais qu’une adaptation au domaine du code informatique reste nécessaire pour atteindre des résultats optimaux.
 
 
-## **Choix pour la suggestion, évolution et limites** ##
+## **Choix pour la suggestion, évolution et limites**
 
-### Première reflexion et système de suggestion ###
+### Première réflexion et système de suggestion
 
-Avec nos précédentes expérimentations, nous avons conclus que l'utilisation des embeddings pour analyser le contexte est bonne, mais moins précise pour suggérer directement des synonymes.
+Avec nos précédentes expérimentations, nous avons conclu que l'utilisation des embeddings pour analyser le contexte est pertinente, mais moins précise pour suggérer directement des synonymes.
 
-Nous avons donc choisi de conserver les embeddings pour se rapprocher un maximum du contexte, mais de récuperer une liste de synonymes depuis un service qui sera comparée au contexte ensuite.
+Nous avons donc choisi de conserver les embeddings pour se rapprocher au maximum du contexte, mais de récupérer une liste de synonymes depuis un service, qui sera ensuite comparée au contexte.
 
-A la base, comme nous avions la liberté du langage, nous nous sommes penché sur le français, et le seul service qui permet de récuperer une liste de synonymes français sans passer par une traduction (Reverso), est ReSyf, qui propose également un code qui contient les données et permet de récuperer les données en question. C'est un service en local, mais qui possède donc une liste figée.
+À la base, comme nous avions la liberté du langage, nous nous sommes penchés sur le français. Le seul service permettant de récupérer une liste de synonymes français sans passer par une traduction (Reverso) est ReSyf, qui propose également un code contenant les données. C'est un service local, mais il possède une liste figée.
 
-Nous avons donc pour l'application un système où le mot désiré et les synonymes déjà saisis, sont envoyé dans le back, qui va d'abord faire passer le mot au service ReSyf pour obtenir une liste de synonymes du mot, qui va ensuite être envoyée avec les synonymes déjà présent pour calculer la proximité des mots au contexte de cette manière.
+Nous avons donc mis en place un système où le mot ciblé et les synonymes déjà saisis sont envoyés au back-end ; celui-ci interroge d'abord le service ReSyf pour obtenir une liste de synonymes, puis combine ces résultats avec les synonymes déjà présents pour calculer la proximité par rapport au contexte.
 
 ### Limite de l'utilisation d'API ###
 
-Néanmoins, cette solution atteint une certaine limite au niveau de la pertinence de la suggestion lorsque l'on passe sur des contexte qui deviennent très spécifiques, le fait que ReSyf soit fixe, devient bloquant. Par exemple, il n'y a pas de synonymes pour le contexte spécifique d'un plateau de jeu.
+Néanmoins, cette solution atteint une certaine limite de pertinence lorsque l'on passe à des contextes très spécifiques : le fait que ReSyf soit figé devient bloquant. Par exemple, il n'y a pas de synonymes pour le contexte spécifique d'un plateau de jeu.
 
 De plus, pour chaque nouvelle langue que nous voulons ajouter, il nous faut un nouveau service de synonymes, ce qui limite l'efficacité et la vitesse d'implémentation.
 
 ### Nouvelle solution ###
 
-Le client a choisi à la suite de cela, une nouvelle solution pour obtenir des synonymes et passer l'application en anglais. Nous nous sommes donc penchés sur les modèles de langages. Mais tout en prenant en compte la contrainte d'une application ou la souveraineté des données est conservée, et gratuitement. Donc utiliser l'API de ChatGPT, Gemini, ou autre LLM répandu passe à la trappe. Il nous reste la possibilité donc d'utiliser un modèle en local. Ce qui impose alors une contrainte sur les performances de la machine qui heberge l'application. 
+Le client a choisi à la suite de cela, une nouvelle solution pour obtenir des synonymes et passer l'application en anglais. Nous nous sommes donc penchés sur les modèles de langages. Cependant, en tenant compte de la contrainte de conserver la souveraineté des données et de rester gratuit, l'utilisation d'API externes (ChatGPT, Gemini ou autres LLM répandus) n'est pas retenue. Il reste la possibilité d'utiliser un modèle local, ce qui impose des contraintes de performance sur la machine qui héberge l'application. 
 
-C'est pour cela que nous nous sommes tournés vers des modèles légers, inférieur a 500 Mo, il y a donc deux options dans ce cas : Gemma, et Qwen3. Gemma est un modèle lié a Google mais qui est compliqué à faire tourner en local sans compte ou autre. Qwen3 est donc une solution viable, performante et qui tourne en local librement, avec une license permettant son utilisation dans notre projet.
+C'est pourquoi nous nous sommes tournés vers des modèles légers, inférieurs à 500 Mo : deux options se détachent — Gemma et Qwen3. Gemma est un modèle lié à Google, mais il est compliqué à faire tourner en local sans compte. Qwen3 est une solution viable, performante et qui tourne librement en local, avec une licence permettant son utilisation dans notre projet.
