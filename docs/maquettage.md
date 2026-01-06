@@ -1,4 +1,4 @@
-# L'évolution d'es maquettes
+# L'évolution des maquettes
 
 Pour ce projet, nous avons réalisé des maquettes et des prototypes destinés à être présentés au client afin qu’il valide le design de l’application avant de commencer le développement.
 
