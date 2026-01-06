@@ -8,6 +8,6 @@ Une fois cette base obtenue, il nous a fallu créer un logo. Pour cela, nous avo
 
 [![Miniature](./img/maquettage/Maquette-verte-debut.png){ width="500" .center }](./img/maquettage/Maquette-verte-debut.png)
 
-Tout au long du processus de maquettage, nous avons reçu des retours réguliers du client. Ceux-ci nous ont permis d’affiner le design en fonction de ses remarques et des besoins exprimés, notamment en intégrant la charte graphique de l’Université de Limoges. Finalement, l’ensemble de ces échanges avec le client nous a conduit à un résultat final moderne et épuré, tout en respectant pleinement ses attentes et ses besoins.
+Tout au long du processus de maquettage, nous avons reçu des retours réguliers du client. Ceux-ci nous ont permis d’affiner le design en fonction de ses remarques et des besoins exprimés, notamment en intégrant la [charte graphique de l’Université de Limoges](https://www.unilim.fr/guide-didentite-et-dimage). Finalement, l’ensemble de ces échanges avec le client nous a conduit à un résultat final moderne et épuré, tout en respectant pleinement ses attentes et ses besoins.
 
 [![Miniature](./img/maquettage/Maquette-rouge-final.png){ width="500" .center }](./img/maquettage/Maquette-rouge-final.png)
