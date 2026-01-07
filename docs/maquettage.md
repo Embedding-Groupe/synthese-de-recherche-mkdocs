@@ -4,6 +4,8 @@ Pour ce projet, nous avons réalisé des maquettes et des prototypes destinés �
 
 Au départ, nous avions quelques difficultés avec le design. C’est pourquoi nous avons utilisé une intelligence artificielle générative de maquettes que nous avons découverte : Stitch. Après plusieurs prompts détaillés, l’IA nous a généré des maquettes plutôt convaincantes, qui nous ont servi de base pour concevoir le design final de l’application à l’aide de l’outil Figma.
 
+[![Miniature](./img/maquettage/Maquette-stitch.png){ width="500" .center }](./img/maquettage/Maquette-stitch.png)
+
 Une fois cette base obtenue, il nous a fallu créer un logo. Pour cela, nous avons également utilisé une IA générative, en nous basant sur le nom de l’application (Glosaurus) ainsi que sur son fonctionnement.
 
 [![Miniature](./img/maquettage/Maquette-verte-debut.png){ width="500" .center }](./img/maquettage/Maquette-verte-debut.png)
